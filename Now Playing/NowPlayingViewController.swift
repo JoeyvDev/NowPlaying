@@ -75,7 +75,7 @@ class NowPlayingViewController: UIViewController {
 
 		let activityViewController = UIActivityViewController(activityItems: toShare, applicationActivities: nil)
 		activityViewController.popoverPresentationController?.sourceView = self.view
-		activityViewController.excludedActivityTypes = [UIActivityType.airDrop]
+		activityViewController.excludedActivityTypes = [UIActivityType.airDrop,UIActivityType.saveToCameraRoll]
 		
 		self.present(activityViewController, animated: true, completion: nil)
 	}
